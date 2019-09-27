@@ -1,0 +1,9 @@
+<div *ngFor="let person of persons">
+    <div>
+        <label for="name" class="">Name</label>
+        <input id="name" class="form-control" type="text" value={{person.name}}>
+        <label for="age">Age</label>
+        <input id="age" type="number" value={{person.age}}>
+    </div>
+</div>
+<button (click)="addPerson()">Add Another Person</button>
